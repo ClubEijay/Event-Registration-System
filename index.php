@@ -1,12 +1,11 @@
 <?php
 session_start();
 
-// Initialize registrants array in session if not exists
+
 if (!isset($_SESSION['registrants'])) {
     $_SESSION['registrants'] = array();
 }
 
-// Handle POST form submission
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name = trim($_POST['name']);
     $email = trim($_POST['email']);
@@ -15,12 +14,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $guests = trim($_POST['guests']);
     $special_requests = trim($_POST['special_requests']);
     
-    // Basic validation
+    
     if (!empty($name) && !empty($email) && !empty($phone) && !empty($event)) {
-        // Create unique ID for the registrant
+      
         $id = count($_SESSION['registrants']) + 1;
         
-        // Store registrant data in SESSION
+       
         $_SESSION['registrants'][$id] = array(
             'id' => $id,
             'name' => $name,
@@ -44,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grand Palace Hotel - Event Registration</title>
+    <title>Club Eijay Hotel - Event Registration</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -219,7 +218,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="col-md-8">
                     <div class="hotel-logo">
                         <i class="fas fa-crown me-3"></i>
-                        Grand Palace Hotel
+                         Club Eijay Hotel
                     </div>
                     <div class="hotel-subtitle">
                         <i class="fas fa-star me-1"></i>
@@ -282,7 +281,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             Exclusive Event Registration
                         </h2>
                         <p class="text-center mb-0 mt-2" style="opacity: 0.9;">
-                            Reserve your spot at our prestigious events
+                            Reserve your spot at our prestigious events!
                         </p>
                     </div>
                     <div class="card-body p-4">
@@ -409,13 +408,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <div class="text-center text-white">
                     <div class="hotel-logo mb-3" style="font-size: 1.5rem;">
                         <i class="fas fa-crown me-2"></i>
-                        Grand Palace Hotel
+                        Club Eijay Hotel
                     </div>
-                    <p class="mb-2">Where Luxury Meets Excellence</p>
+                    <p class="mb-2">Register and Give Me Your Money</p>
                     <div class="d-flex justify-content-center gap-4 mb-3">
-                        <span><i class="fas fa-map-marker-alt me-1"></i> 123 Luxury Avenue, Prestige City</span>
+                        <span><i class="fas fa-map-marker-alt me-1"></i> Lab 802, University of Cebu - Banilad</span>
                         <span><i class="fas fa-phone me-1"></i> +1 (555) 123-4567</span>
-                        <span><i class="fas fa-envelope me-1"></i> concierge@grandpalace.com</span>
+                        <span><i class="fas fa-envelope me-1"></i> eijay.pepito8@gmail.com</span>
                     </div>
                     <div class="d-flex justify-content-center gap-3">
                         <i class="fas fa-star text-warning"></i>
