@@ -1,10 +1,10 @@
-# 🏨 Grand Palace Hotel - Luxury Event Management System
+# 🏨 Club Eijay Hotel - Luxury Event Management System
 
 A sophisticated PHP web application that demonstrates **POST**, **GET**, and **SESSION** concepts with elegant Bootstrap styling for a luxury hotel experience.
 
 ## 🎯 Project Overview
 
-The Grand Palace Hotel Event Management System allows guests to register for exclusive luxury events, view all registered guests, and access detailed guest information. The application showcases the three core PHP concepts required for the lab activity while providing a premium hotel experience.
+The Club Eijay Hotel Event Management System allows guests to register for exclusive luxury events, view all registered guests, and access detailed guest information. The application showcases the three core PHP concepts required for the lab activity while providing a premium hotel experience.
 
 ## 📁 File Structure
 
@@ -20,7 +20,7 @@ Lab Act 4.3/
 
 ### 1. POST (Form Submission)
 **File:** `index.php`
-- **Location:** Luxury hotel registration form (lines 15-30)
+- **Location:** Club Eijay hotel registration form (lines 15-30)
 - **Implementation:** 
   ```php
   if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -31,7 +31,7 @@ Lab Act 4.3/
       // ... process form data
   }
   ```
-- **Purpose:** Handles luxury hotel guest registration form submission
+- **Purpose:** Handles Club Eijay hotel guest registration form submission
 - **Features:** Form validation, data sanitization, success/error messages, guest count, special requests
 
 ### 2. GET (URL Parameters)
